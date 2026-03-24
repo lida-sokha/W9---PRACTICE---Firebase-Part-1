@@ -1,7 +1,9 @@
+import 'package:theory_lesson/W9%20-%20PRACTICE%20-%20Firebase%20Part%201/model/artists/artist.dart';
+
 class Song {
   final String id;
   final String title;
-  final String artist;
+  final Artist artist;
   final Duration duration;
   final Uri imageUrl;
 

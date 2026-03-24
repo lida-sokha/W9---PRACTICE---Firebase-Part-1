@@ -33,7 +33,7 @@ class SongTile extends StatelessWidget {
           ),
           title: Text(song.title),
           subtitle: Text(
-            "${song.duration.inMinutes}:${(song.duration.inSeconds % 60).toString().padLeft(2, '0')}",
+            "${song.duration.inMinutes}:${(song.duration.inSeconds % 60).toString().padLeft(2, '0')} ${song.artist.name} - ${song.artist.genre}",
           ),
           trailing: Text(
             isPlaying ? "Playing" : "",
